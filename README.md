@@ -124,6 +124,30 @@ Read [more](https://github.com/tgdrive/teldrive/wiki/Teldrive-setup-with-Rclone-
 
 Follow [this](https://github.com/tgdrive/player-protocol) to open file links directly in VLC and PotPlayer.
 
+# Passos do daemon
+
+cd /root/.local/bin/.instl/teldrive/
+
+sudo su
+teldrive run --tg-app-id="466395" --tg-app-hash="26a28aac442406c3b03e0e3527eb8fbb" --jwt-secret="e720f0ebf8596fa2055f5811ec6a250073ed127b291e90b8842d49da4d5ddb62" --db-data-source="postgres://teldrive:secret@postgres_db/postgres" --server-port="8089" --tg-rate="2048"
+
+sudo nano /usr/local/bin/run_teldrive.sh
+
+#!/bin/bash
+sudo /home/your_user/.local/bin/.instl/teldrive/teldrive run --tg-app-id="466395" --tg-app-hash="26a28aac442406c3b03e0e3527eb8fbb" --jwt-secret="e720f0ebf8596fa2055f5811ec6a250073ed127b291e90b8842d49da4d5ddb62" --db-data-source="postgres://teldrive:secret@postgres_db/postgres" --server-port="8089"
+
+sudo chmod +x /usr/local/bin/run_teldrive.sh
+
+sudo nano /etc/systemd/system/teldrive.service
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable teldrive.service
+
+sudo systemctl start teldrive.service
+
+sudo systemctl status teldrive.service
+
 ## Important
   - Default Channel can be selected through UI. Make sure to set it from account settings on first login.
   - Multi Bots Mode is recommended to avoid flood errors and enable maximum download speed, especially if you are using downloaders like IDM and aria2c, which use multiple connections for downloads.
