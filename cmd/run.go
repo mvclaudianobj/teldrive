@@ -53,7 +53,7 @@ func NewRun() *cobra.Command {
 	}
 
 	runCmd.Flags().StringP("config", "c", "", "Config file path (default $HOME/.teldrive/config.toml)")
-	runCmd.Flags().IntVarP(&config.Server.Port, "server-port", "p", 8080, "Server port")
+	runCmd.Flags().IntVarP(&config.Server.Port, "server-port", "p", 8090, "Server port")
 	duration.DurationVar(runCmd.Flags(), &config.Server.GracefulShutdown, "server-graceful-shutdown", 15*time.Second, "Server graceful shutdown timeout")
 	runCmd.Flags().BoolVar(&config.Server.EnablePprof, "server-enable-pprof", false, "Enable Pprof Profiling")
 	duration.DurationVar(runCmd.Flags(), &config.Server.ReadTimeout, "server-read-timeout", 1*time.Hour, "Server read timeout")

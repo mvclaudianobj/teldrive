@@ -9,7 +9,7 @@ services:
       - ./config.toml:/config.toml
       - ./session.db:/session.db
     ports:
-      - 8080:8080
+      - 8090:8090
 networks:
   postgres:                                 
-    external: true
+    external: false
