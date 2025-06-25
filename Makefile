@@ -4,10 +4,12 @@ else
 SHELL := /bin/bash
 endif
 
-APP_NAME := teldrive
+APP_NAME := fenixdrive
 BUILD_DIR := bin
 FRONTEND_DIR := ui/dist
-FRONTEND_ASSET := https://github.com/tgdrive/teldrive-ui/releases/download/v1/teldrive-ui.zip
+#FRONTEND_ASSET := https://github.com/tgdrive/teldrive-ui/releases/download/v1/teldrive-ui.zip
+#FRONTEND_ASSET :=https://fenixsol.com.br/teldrive-ui/releases/download/v1/teldrive-ui.zip # original
+FRONTEND_ASSET :=https://fenixsol.com.br/teldrive-ui/releases/download/v2/teldrive-ui.zip
 GIT_TAG := $(shell git describe --tags --abbrev=0)
 GIT_COMMIT := $(shell git rev-parse --short HEAD)
 GIT_LINK := $(shell git remote get-url origin)

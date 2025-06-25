@@ -1,0 +1,53 @@
+[db]
+  data-source = "postgres://teldrive:mvc645370@postgres_db/postgres"
+  prepare-stmt = true
+  log-level = 1
+  [db.pool]
+    enable = true
+    max-idle-connections = 25
+    max-lifetime = "10m"
+    max-open-connections = 25
+
+[cronjobs]
+  enable = true
+
+[jwt]
+  allowed-users = [""]
+  secret = "435f7e05b865d92d3992030953dedad9d7a7b300fd3e313b1d25de101264c22c"
+  session-time = "30d"
+
+[log]
+  development = true
+  level = -1
+
+[server]
+  graceful-shutdown = "15s"
+  port = 8080
+  read-timeout = "1h"
+  write-timeout = "1h"
+
+[tg]
+  app-hash = "26a28aac442406c3b03e0e3527eb8fbb"
+  app-id = 466395
+  app-version = "4.6.3 K"
+  bg-bots-limit = 5
+  device-model = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0"
+  disable-stream-bots = false
+  lang-code = "en"
+  lang-pack = "webk"
+  rate = 100
+  rate-burst = 5
+  rate-limit = true
+  session-file = ""
+  system-lang-code = "en-US"
+  system-version = "Win32"
+  proxy= "http://127.0.0.1:8090"
+  
+  [tg.uploads]
+    encryption-key = ""
+    retention = "7d"
+    threads = 8
+  [tg.stream]
+    multi-threads = 0
+    buffers = 8
+
