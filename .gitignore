@@ -35,3 +35,5 @@ docs/dist
 teldrive-ui.zip
 internal/api
 .aider*
+docker/compose/postgres_data/
+docker/compose/postgres_data_backup/
