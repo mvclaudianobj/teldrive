@@ -1,7 +1,7 @@
 version: "3"
 
 vars:
-  APP_NAME: teldrive
+  APP_NAME: fenixdrive
   BUILD_DIR: bin
   FRONTEND_DIR: ui/dist
   FRONTEND_ASSET: https://github.com/tgdrive/teldrive-ui/releases/download/latest/teldrive-ui.zip
