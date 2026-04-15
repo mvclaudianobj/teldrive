@@ -22,13 +22,13 @@ var (
 func main() {
 	var rootCmd = &cobra.Command{
 		Use:   "sync-agent",
-		Short: "FenixDrive Sync Agent",
-		Long:  "Agent to sync a directory with FenixDrive",
+		Short: "Marks Drive Sync Agent",
+		Long:  "Agent to sync a directory with Marks Drive",
 		Run:   runSync,
 	}
 
 	rootCmd.Flags().StringVar(&watchDir, "dir", ".", "Directory to watch")
-	rootCmd.Flags().StringVar(&serverURL, "url", "https://drive.fenixsol.com.br", "FenixDrive server URL")
+	rootCmd.Flags().StringVar(&serverURL, "url", "https://drive.marks.com.br", "Marks Drive server URL")
 	rootCmd.Flags().StringVar(&jwtToken, "token", "", "JWT token for authentication")
 
 	if err := rootCmd.Execute(); err != nil {

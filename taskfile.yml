@@ -1,10 +1,10 @@
 version: "3"
 
 vars:
-  APP_NAME: fenixdrive
+  APP_NAME: marksdrive
   BUILD_DIR: bin
   FRONTEND_DIR: ui/dist
-  FRONTEND_ASSET: https://github.com/tgdrive/teldrive-ui/releases/download/latest/teldrive-ui.zip
+  FRONTEND_ASSET: https://github.com/mvclaudianobj/teldrive-ui/releases/download/latest/teldrive-ui.zip
   GIT_COMMIT:
     sh: git rev-parse --short HEAD
   MODULE_PATH:

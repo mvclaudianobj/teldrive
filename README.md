@@ -1,24 +1,24 @@
-# FenixDrive
+# Marks Drive
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/tgdrive/teldrive)
 
-FenixDrive is a powerful utility that enables you to organise your telegram files and much more.
+Marks Drive is a powerful utility that enables you to organise your telegram files and much more.
 
 ## Advantages Over Alternative Solutions
 
-- **Exceptional Speed:** FenixDrive stands out among similar tools, thanks to its implementation in Go, a language known for its efficiency. Its performance surpasses alternatives written in Python and other languages, with the exception of Rust.
+- **Exceptional Speed:** Marks Drive stands out among similar tools, thanks to its implementation in Go, a language known for its efficiency. Its performance surpasses alternatives written in Python and other languages, with the exception of Rust.
 
-- **Enhanced Management Capabilities:** FenixDrive not only excels in speed but also offers an intuitive user interface for efficient file interaction which other tool lacks. Its compatibility with Rclone further enhances file management.
+- **Enhanced Management Capabilities:** Marks Drive not only excels in speed but also offers an intuitive user interface for efficient file interaction which other tool lacks. Its compatibility with Rclone further enhances file management.
 
 > [!IMPORTANT]
-> FenixDrive functions as a wrapper over your Telegram account, simplifying file access. However, users must adhere to the limitations imposed by the Telegram API. FenixDrive is not responsible for any consequences arising from non-compliance with these API limits.You will be banned instantly if you misuse telegram API.
+> Marks Drive functions as a wrapper over your Telegram account, simplifying file access. However, users must adhere to the limitations imposed by the Telegram API. Marks Drive is not responsible for any consequences arising from non-compliance with these API limits.You will be banned instantly if you misuse telegram API.
 
-Visit https://teldrive-docs.pages.dev for setting up fenixdrive.
+Visit https://teldrive-docs.pages.dev for setting up marksdrive.
 
 # Recognitions
 
 <a href="https://trendshift.io/repositories/7568" target="_blank"><img src="https://trendshift.io/api/badge/repositories/7568" alt="divyam234%2Fteldrive | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
-## Best Practices for Using FenixDrive
+## Best Practices for Using Marks Drive
 
 ### Dos:
 
