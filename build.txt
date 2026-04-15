@@ -1,0 +1,2 @@
+nice -n 10 ionice -c2 -n7 env GOMAXPROCS=1 GOFLAGS='-p=1' CGO_ENABLED=0 GOOS=linux GOARCH=amd64 /usr/local/go/bin/go build -o marksdrive .
+
