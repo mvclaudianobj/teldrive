@@ -1,0 +1,6 @@
+FROM alpine:3.20
+RUN adduser -D -H -u 10001 appuser
+COPY marksdrive /usr/local/bin/marksdrive
+USER appuser
+EXPOSE 3939
+ENTRYPOINT ["/usr/local/bin/marksdrive", "run"]
